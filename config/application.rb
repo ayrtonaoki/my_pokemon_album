@@ -32,7 +32,10 @@ module MyPokemonAlbum
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    # Don't generate system test files.
-    config.generators.system_tests = nil
+    # Don't generate:
+    config.generators do |g|
+      g.system_tests    false
+      g.helper          false
+    end
   end
 end
