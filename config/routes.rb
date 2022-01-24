@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  namespace :users_backoffice do
+    get 'home/index'
+  end
+  namespace :admins_backoffice do
+    get 'home/index'
+  end
   devise_for :admins
   devise_for :users
   root to: 'home#index'
