@@ -13,5 +13,8 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:ayrtonaoki/my_pokemon_album.git",
+  "license": "MIT"
 }
